@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Saturn9</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Microsoft.Xna.Framework.RuntimeProfile" />
+    <EmbeddedResource Include="Microsoft.Xna.Framework.RuntimeProfile" LogicalName="Microsoft.Xna.Framework.RuntimeProfile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="SynapseGaming-SunBurn-Pro">
+      <HintPath>..\Saturn9-PC-Port\SynapseGaming-SunBurn-Pro.dll</HintPath>
+    </Reference>
+    <Reference Include="DPSFXbox360">
+      <HintPath>..\Saturn9-PC-Port\DPSFXbox360.dll</HintPath>
+    </Reference>
+    <Reference Include="FNA">
+      <HintPath>..\Saturn9-PC-Port\FNA.dll</HintPath>
+    </Reference>
+    <Reference Include="BEPUphysics">
+      <HintPath>..\Saturn9-PC-Port\BEPUphysics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Net" />
+    <Reference Include="Microsoft.Xna.Framework.GamerServices" />
+    <Reference Include="sgMotion">
+      <HintPath>..\Saturn9-PC-Port\sgMotion.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="EasyStorage">
+      <HintPath>..\Saturn9-PC-Port\EasyStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="XnaToFna">
+      <HintPath>..\Saturn9-PC-Port\XnaToFna.exe</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
